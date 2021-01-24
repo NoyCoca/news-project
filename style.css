@@ -23,13 +23,15 @@ a{
     background-color: var(--blue-color);
     padding: 20px;
 }
-.connavbar li a {
+ .connavbar li a {
     color: var(--bg-color);
+    text-decoration: none;
+    
 }
 .connavbar li:hover {
     background-color: var(--green-color);
 }
-.connavbar a:hover{
+.connavbar a i:hover{
     color: var(--green-color);
 }
 .connavbar{
@@ -161,4 +163,48 @@ a{
         margin-bottom: 10px;
     }
     
+}
+
+@media (min-width:360px) and (max-width:700px){
+    .social{
+        display: none;
+    }
+    .connavbar{
+     display: flex;
+     flex-direction: column;   
+    }
+    .connavbar ul{
+        margin: 20px;
+    }
+    .imgcon{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 ;
+    }
+    .carousel-item img{
+        height: 200px;
+        margin: 20px 0;
+    }
+    .photo{
+        width: fit-content;
+    }
+    .photo1{
+        display: initial;
+    }
+    .footer{
+        display: inline-block;   
+    }
+    .footer img{
+        display: none;   
+    }
+    .Contact{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+}
+@media (min-width:700px){
+    .imgcon{
+        margin: 0px;
+    }
 }
